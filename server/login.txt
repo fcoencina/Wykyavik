@@ -1,0 +1,7 @@
+
+* body-parser, bcrypt, jsonwebtoken. Paquetes a instalar que son
+fundamentales para construir un login seguro.
+
+*
+
+*

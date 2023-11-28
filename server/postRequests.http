@@ -1,0 +1,32 @@
+
+POST http://localhost:9000/post/create HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY5MDQ4NDU0MiwiZXhwIjoxNjkwNDg4MTQyfQ.K0VCiOP_OKs2O3YCUrfyUjz_wAw0iStyyQRgVVJw1_A
+
+{
+    "title": "MyFirstPost",
+    "subtitle": "Qué es un párrafo?",
+    "content": "Un párrafo, también llamado parágrafo, es una unidad comunicativa del lenguaje escrito compuesta por un conjunto de oraciones que tienen cierta unidad temática o que, sin tenerla, se enuncian juntas. Es un componente del texto que en su aspecto externo termina en un punto y aparte.",
+    "imageUrl": "urlDeLaImagen",
+    "userId": "1"
+}
+###
+
+GET http://localhost:9000/post/posts HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY5MDQ4NDU0MiwiZXhwIjoxNjkwNDg4MTQyfQ.K0VCiOP_OKs2O3YCUrfyUjz_wAw0iStyyQRgVVJw1_A
+###
+
+DELETE http://localhost:9000/post/delete/1 HTTP/1.1
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY5MDQ4MDQ0NiwiZXhwIjoxNjkwNDg0MDQ2fQ.snfI1lIuS4cklVdmvPbawjW83kT300Kfb1jB5kWmViY
+###
+
+PUT http://localhost:9000/post/update/2 HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY5MDUwMjIyNiwiZXhwIjoxNjkwNTA1ODI2fQ.QwoscaCH7NxVUO2XXrhVptFTkubN27AKOtvAgivvuig
+
+{
+    "title": "MyFirstPostEdited",
+    "subtitle": "Qué es un párrafo?",
+    "content": "Un párrafo, también llamado parágrafo, es una unidad comunicativa del lenguaje escrito compuesta por un conjunto de oraciones que tienen cierta unidad temática o que, sin tenerla, se enuncian juntas. Es un componente del texto que en su aspecto externo termina en un punto y aparte.",
+    "imageUrl": "urlDeLaImagen"
+}
